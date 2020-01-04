@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name=”viewport” content=”width=device-width initial-scale=1”>
+	<meta charset ="utf-8">
+	<title>Module-2 solution</title>
+</head>
+<style type="text/css">
+
+* { 
+	box-sizing: border-box;
+  }
+
+body { 
+  font-family: 'Open Sans', serif;
+  color: #666;
+}
+
+/* STRUCTURE */
+.para
+{
+	padding: 0px 10px 0px 15px;
+}
+.wrapper {
+	padding: 5px;
+	max-width: 960px;
+	margin: 10px auto;
+	border: 10px;
+}
+header {
+	padding: 0 15px;
+	text-align: center;
+    font-size: 30px;
+}
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin-right: 0px;
+	padding: 10 10 10 10;
+	border-color: black solid;
+}
+
+.column
+{
+	width: 30px; 
+	flex: 1;
+	border: 1px solid gray;
+	margin: 20px;
+	padding: 0px;
+	background-color: lightgrey;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+}
+
+#main1
+{
+	 width: 30%;
+    height: 35px;
+    float: right;
+    padding: 5px;
+    margin-top: 0px;
+    background-color: red;
+	background-color: pink;
+}
+
+#main2
+{
+	width: 30%;
+    height: 35px;
+    float: right;
+    padding: 5px;
+    margin-top: 0px;
+    background-color: red;
+}
+
+#main3
+{
+	width: 30%;
+    height: 35px;
+    float: right;
+    padding: 5px;
+    margin-top: 0px;
+	background-color: yellow;
+}
+
+@media screen and (max-width: 990px)
+ {
+  .columns .column 
+  {
+	margin-bottom: 5px;
+    flex-basis: 40%;
+	&:nth-last-child(2)
+	{
+		margin-right: 0;
+	}
+	&:last-child 
+	{
+		flex-basis: 100%;
+		margin: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 767px)
+ {
+	.columns .column 
+	{
+		flex-basis: 100%;
+		margin: 0 0 5px 0px;
+	}
+}
+
+<h3>
+{
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+}
+</style>
+
+<body>
+   <div class="wrapper">
+
+	<header>
+		<h1>Our Menu</h1>
+	</header>
+		
+<section class="columns">
+	
+	<div class="column">
+		<h3 id="main1"><b>Chicken</b></h3>
+		<br><br>
+		<div class="para">
+		<p><b>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidedunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commando consequat</b></p>
+	</div>
+	</div>
+	
+	<div class="column">
+		<h3 id="main2"><b>Beef</b></h3>
+		<br><br>
+		<div class="para">
+		<p><b>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidedunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commando consequat</b></p>
+	</div>
+	</div>
+  
+  <div class="column">
+  	<div class="text">
+		<h3 id="main3"><b>Sushi</b></h3>
+	</div>
+		<br><br>
+		<div class="para">
+		<p><b>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidedunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commando consequat</b></p>
+	    </div>
+	</div>
+	
+</section>	
+</body>
+</html>
