@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Module 4 solution</title>
+</head>
+<body>
+    <h1><center>MODULE 4 SOLUTION</center></h1>
+    Hello Yaakov<br><br>
+ Good Bye John<br><br>
+ Good Bye Jen<br><br>
+ Good Bye Jason<br><br>
+ Hello Paul<br><br>
+ Hello Frank<br><br>
+ Hello Larry<br><br>
+ Hello Paula<br><br>
+ Hello Laura
+    <p id="output"></p>
+
+    <script type="text/javascript">
+    	var names = ["Yaakov", "John", "Jen", "Jason", "Paul", "Frank", "Larry", "Paula", "Laura", "Jim"];
+for (var i = 0; i < names.length; i++)
+{
+   var firstLetter = names[i].charAt(0).toLowerCase();
+
+   if (firstLetter === 'j') 
+
+  {
+    document.getElementById('output').innerHTML=("Good Bye "+names[i]);
+    console.log("Good Bye "+names[i]);
+
+  } 
+
+  else 
+  {
+    document.getElementById('output').innerHTML=("Hello "+names[i]);
+    console.log("Hello " + names[i]);
+  
+  }	
+}
+	
+    </script>
+</body>
+</html>
